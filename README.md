@@ -12,7 +12,7 @@ Moving forward, we plan to incorporate NVSHMEM support by migrating dependencies
 
 (C) 2025 by Institute of Computing Technology, Chinese Academy of Sciences. See [COPYRIGHT](https://github.com/hpdps-group/coccl/blob/main/LICENSE.txt) in top-level directory.
 
-- Developers:  Xingchen Liu, Haoran Kong, Zheng Wei, Liyang Zhao, Yufan Wang, Jingwu Yang
+- Developers:  Xingchen Liu, Haoran Kong, Zheng Wei, Liyang Zhao, Yufan Wang, Jinwu Yang
 - Advisors: [Dingwen Tao](https://www.dingwentao.com/), [Guangming Tan](https://tanniu.github.io/)
 
 #### Tested GPU Platforms
