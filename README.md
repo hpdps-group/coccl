@@ -6,7 +6,7 @@ Compression and precision cO-awareness Collective Communication Library implemen
 
 COCCL is a compression-aware GPU collective communication library built upon NCCL 2.21.5. It systematically integrates compression support into NCCL and re-wraps its API to provide a suite of collective communication pipelines optimized with high-performance GPU compression techniques. COCCL is designed to be extensible, supporting various lossless compression methods (e.g., low-bit quantization). We acknowledge that while some existing works support collective communication with compression, such as [1]-[5], COCCL is the first to support various collective primitives with configurable compression algorithms and achieve compression-and-precision co-optimization within NCCL (rather than MPI).
 
-For instance, leveraging the minmaxUint8 quantization algorithm, COCCL achieves approximately 3× speedup on collective communication operations such as all-reduce, all-gather, reduce-scatter, and all-to-all. Additionally, it retains NCCL's native GPU data transfer optimizations, improving transmission efficiency across heterogeneous hardware interconnect systems. COCCL is particularly beneficial for applications requiring intensive collective communication, including large-scale model training, inference systems, and scientific computing.
+For example, by utilizing the minmaxUint8 quantization algorithm, CoCCL achieves an approximately 3× speedup on collective communication operations, including all-reduce, all-gather, reduce-scatter, and all-to-all, compared to the original FP32-based communication. Additionally, it retains NCCL's native GPU data transfer optimizations, improving transmission efficiency across heterogeneous hardware interconnect systems. COCCL is particularly beneficial for applications requiring intensive collective communication, including large-scale model training, inference systems, and scientific computing.
 
 Moving forward, we plan to incorporate NVSHMEM support by migrating dependencies from [DeepEP](https://github.com/deepseek-ai/DeepEP) and integrating selected optimization mechanisms to further enhance COCCL's communication performance.
 
@@ -79,6 +79,9 @@ $ ./build/alltoall_comp_perf -b 1K -e 256M -f 2 -t <ngpus> -g 1
 all tests are listed as binary files in the build directory.
 
 ## Benchmarking Results
+
+- Environment: 8 GPUs per node, 25 Gbps interconnect, PCIe 3.0 x16 (16 GB/s) for intra-node GPU-to-GPU communication
+- Comparison: NCCL with FP32 (i.e., w/o compression), COCCL with minmaxUint8 (i.e., w/ compression)
 
 #### Alltoall
 
