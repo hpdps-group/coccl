@@ -91,6 +91,10 @@ all tests are listed as binary files in the build directory.
   <img src="pictures/alltoall_8.png" width=49%/>
   <img src="pictures/alltoall_16.png" width=49%/>
   </center>
+- ##### A800
+  <center class="half">
+  <img src="pictures/alltoall_a800.png" width=49%/>
+  </center>
 
 #### ReduceScatter
 
@@ -99,6 +103,10 @@ all tests are listed as binary files in the build directory.
   <center class="half">
   <img src="pictures/ReduceScatter_8.png" width=49%/>
   <img src="pictures/ReduceScatter_16.png" width=49%/>
+  </center>
+- ##### A800
+  <center class="half">
+  <img src="pictures/reducescatter_a800.png" width=49%/>
   </center>
 
 #### Allgather
@@ -109,6 +117,10 @@ all tests are listed as binary files in the build directory.
   <img src="pictures/Allgather_8.png" width=49%/>
   <img src="pictures/Allgather_16.png" width=49%/>
   </center>
+- ##### A800
+  <center class="half">
+  <img src="pictures/allgather_a800.png" width=49%/>
+  </center>
 
 #### Allreduce
 
@@ -117,6 +129,10 @@ all tests are listed as binary files in the build directory.
   <center class="half">
   <img src="pictures/Allreduce_8.png" width=49%/>
   <img src="pictures/Allreduce_16.png" width=49%/>
+  </center>
+- ##### A800
+  <center class="half">
+  <img src="pictures/allreduce_a800.png" width=49%/>
   </center>
 
 ## Issues
